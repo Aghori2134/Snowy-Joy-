@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowy Joy | Christmas Wonderland</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: #24544f;
+            background: #fffaf5;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .soft-shadow {
+            box-shadow: 0 8px 25px rgba(39, 79, 71, 0.08);
+        }
+
+        .hero-bg {
+            background-image:url('images/hero.png'), linear-gradient(100deg, #eff8f5 0%, #f8f6ee 45%, #dceef5 100%);
+			background-position:center;
+			
+        }
+
+        .mint-bg {
+            background: #edf7f1;
+        }
+
+        .pink-bg {
+            background: #fff0ed;
+        }
+
+        .blue-bg {
+            background: #eaf5fa;
+        }
+
+        .cream-bg {
+            background: #fffaf5;
+        }
+
+        .red-btn {
+            background: #c94c49;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .red-btn:hover {
+            background: #a93736;
+            transform: translateY(-2px);
+        }
+
+        .product-image {
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .offer-image {
+            height: 175px;
+            object-fit: cover;
+        }
+
+        .gallery-image {
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .round-image {
+            border-radius: 45% 45% 28% 28%;
+        }
+
+        .snow {
+            color: #bddbd9;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 640px) {
+            .product-image {
+                height: 145px;
+            }
+
+            .offer-image {
+                height: 135px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white">
+        <nav class="max-w-7xl mx-auto px-5 py-5 flex flex-wrap items-center justify-between">
+            <a href="#home" class="text-2xl font-extrabold flex items-center">
+                <span class="mr-2 text-3xl">🎄</span>
+                Snowy <span class="text-red-500 ml-1">Joy</span>
+            </a>
+
+            <div class="flex flex-wrap items-center gap-4 md:gap-7 text-sm font-semibold mt-3 md:mt-0">
+                <a href="#home" class="text-red-500">Home</a>
+                <a href="#about" class="hover:text-red-500">About</a>
+                <a href="#offers" class="hover:text-red-500">Offers</a>
+                <a href="#products" class="hover:text-red-500">Products</a>
+                <a href="#events" class="hover:text-red-500">Events</a>
+                <a href="#gallery" class="hover:text-red-500">Gallery</a>
+                <a href="#contact" class="hover:text-red-500">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4 text-xl mt-3 md:mt-0">
+                <a href="#products" aria-label="Search"><i class="ri-search-line"></i></a>
+                <a href="#products" aria-label="Favorites"><i class="ri-heart-line"></i></a>
+                <a href="#products" aria-label="Shopping bag"><i class="ri-shopping-bag-3-line"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-bg">
+            <div class="max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center">
+
+                <div>
+                    <p class="uppercase tracking-widest text-sm text-red-500 font-bold mb-5">
+                        ✦ Spreading Happiness ✦
+                    </p>
+
+                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+                        Make This
+                        <span class="serif italic text-red-500 block">Christmas</span>
+                        More Special
+                    </h1>
+
+                    <p class="text-gray-600 leading-7 mt-6 max-w-md">
+                        Explore our exclusive Christmas collection and bring home the joy,
+                        love and magic of the season. Make every little moment unforgettable.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#products" class="red-btn px-8 py-4 rounded-full font-bold inline-block">
+                            Shop Now &nbsp; →
+                        </a>
+
+                        <a href="#about" class="border border-green-800 px-8 py-4 rounded-full font-bold inline-block">
+                            Discover More
+                        </a>
+                    </div>
+
+                    <div class="flex gap-6 mt-10 text-sm text-gray-600">
+                        <div>
+                            <p class="text-2xl font-extrabold text-green-800">500+</p>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-green-800">100+</p>
+                            <p>Festive Gifts</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-green-800">4.9/5</p>
+                            <p>Customer Love</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white py-8">
+            <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+                <div>
+                    <div class="text-3xl mb-2">🎁</div>
+                    <h3 class="font-bold">Thoughtful Gifts</h3>
+                    <p class="text-sm text-gray-500 mt-1">Made for special moments</p>
+                </div>
+
+                <div>
+                    <div class="text-3xl mb-2">❄️</div>
+                    <h3 class="font-bold">Winter Magic</h3>
+                    <p class="text-sm text-gray-500 mt-1">Festive seasonal favorites</p>
+                </div>
+
+                <div>
+                    <div class="text-3xl mb-2">🚚</div>
+                    <h3 class="font-bold">Easy Delivery</h3>
+                    <p class="text-sm text-gray-500 mt-1">Gifts delivered with care</p>
+                </div>
+
+                <div>
+                    <div class="text-3xl mb-2">♡</div>
+                    <h3 class="font-bold">Made with Love</h3>
+                    <p class="text-sm text-gray-500 mt-1">Joy in every little detail</p>
+                </div>
+
+            </div>
+        </section>
+        <section id="about" class="cream-bg py-20">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+                <div class="relative">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6nPLdT9-w0RjntHnm5PtSHihMoLHNeIG4PEOg1g0gw&s=10"
+                        alt="Christmas tree and festive decorations"
+                        class="w-full h-96 object-cover round-image soft-shadow">
+
+                    <div class="absolute bottom-4 right-0 md:-right-5 bg-white p-5 rounded-2xl soft-shadow">
+                        <p class="text-3xl">⭐ 4.9/5</p>
+                        <p class="text-sm text-gray-500">Loved by our customers</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-red-500 uppercase tracking-widest font-bold text-sm">About Us</p>
+
+                    <h2 class="text-4xl font-extrabold mt-4 leading-tight">
+                        We Bring the Magic of Christmas to You
+                    </h2>
+
+                    <p class="text-gray-600 leading-7 mt-6">
+                        At Snowy Joy, we believe in the power of little moments.
+                        Our Christmas collection is designed to fill your home with
+                        warmth, love and festive cheer. From beautiful decorations to
+                        thoughtful gifts, we bring the magic of Christmas closer to you.
+                    </p>
+
+                    <p class="text-gray-600 leading-7 mt-4">
+                        Whether you are decorating your first Christmas tree, choosing
+                        a gift for someone special or preparing your home for a family
+                        celebration, we have something to make the season memorable.
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-4 mt-8 text-center">
+                        <div class="bg-red-50 rounded-2xl p-4">
+                            <p class="text-3xl">🎀</p>
+                            <p class="font-bold text-sm mt-2">Premium Quality</p>
+                        </div>
+
+                        <div class="bg-green-50 rounded-2xl p-4">
+                            <p class="text-3xl">💝</p>
+                            <p class="font-bold text-sm mt-2">Lovely Gifts</p>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-2xl p-4">
+                            <p class="text-3xl">🚚</p>
+                            <p class="font-bold text-sm mt-2">Safe Delivery</p>
+                        </div>
+                    </div>
+
+                    <a href="#offers" class="red-btn inline-block rounded-full px-7 py-3 mt-8 font-bold">
+                        Explore Our Story →
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="offers" class="mint-bg py-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <p class="uppercase tracking-widest text-red-500 text-sm font-bold">Special Offers</p>
+                    <h2 class="text-4xl font-extrabold mt-3">Festive Deals Just for You</h2>
+                    <p class="text-gray-500 mt-4 leading-7">
+                        Make your celebrations brighter with our seasonal favorites.
+                        Discover beautiful decorations, gifts and little festive surprises.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREpI3GBlyrAGsbw7ucA6v61Dfm_Imq_CFbYeb3Xa38jQ&s=10"
+                             alt="Christmas tree decorations" class="offer-image w-full">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-extrabold">Up to 50% Off</h3>
+                            <p class="text-gray-500 mt-2">Christmas Decorations</p>
+                            <a href="#products" class="inline-block mt-5 font-bold text-sm">Shop Now →</a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg8ihmSTbv84sBCZBMZI2OOsLfjS-OoL64cgUUwWToxQ&s=10"
+                             alt="Wrapped Christmas presents" class="offer-image w-full">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-extrabold">Up to 40% Off</h3>
+                            <p class="text-gray-500 mt-2">Gifts and Hampers</p>
+                            <a href="#products" class="inline-block mt-5 font-bold text-sm">Shop Now →</a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjm4mNMjxlBQPfc9vUe0SemkNXdvOB0VhukhKoJLoCZg&s=10"
+                             alt="Cozy festive home" class="offer-image w-full">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-extrabold">Up to 30% Off</h3>
+                            <p class="text-gray-500 mt-2">Cozy Home Decor</p>
+                            <a href="#products" class="inline-block mt-5 font-bold text-sm">Shop Now →</a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCboRzPaQakVXfY3actBB1e7YNoQcs7EdoBXCy9E8CjQ&s=10"
+                             alt="Festive Christmas scene" class="offer-image w-full">
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-extrabold">Up to 25% Off</h3>
+                            <p class="text-gray-500 mt-2">Winter Wonderland</p>
+                            <a href="#products" class="inline-block mt-5 font-bold text-sm">Shop Now →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section id="products" class="cream-bg py-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="flex flex-wrap justify-between items-end gap-4 mb-10">
+                    <div>
+                        <p class="text-red-500 uppercase tracking-widest font-bold text-sm">Our Collection</p>
+                        <h2 class="text-4xl font-extrabold mt-3">Top Picks for Christmas</h2>
+                        <p class="text-gray-500 mt-3">Little treasures for a season full of joy.</p>
+                    </div>
+
+                    <a href="#gallery" class="border border-green-800 rounded-full px-6 py-3 font-bold">
+                        View Collection →
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <div class="relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTo1772nDzfLVI-rxqRR3wzn9_cTMuPpdUwYeN0o_-2A&s"
+                                 alt="Santa themed Christmas decoration" class="product-image w-full">
+                            <span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-2 rounded-full">Bestseller</span>
+                            <span class="absolute top-3 right-3 bg-white rounded-full px-2 py-1">♡</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-xs text-gray-400">Christmas Decor</p>
+                            <h3 class="font-extrabold mt-2">Santa Figurine</h3>
+                            <p class="text-yellow-500 mt-2">★★★★★</p>
+                            <p class="font-bold mt-2">₹799</p>
+                            <a href="#contact" class="block text-center bg-green-800 text-white rounded-lg py-3 mt-4 text-sm font-bold">Add to Cart</a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <div class="relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-0YlmYSLyllh4jkyJFQt3sKmPJMVASngoBpJ_ijVlsw&s=10"
+                                 alt="Christmas tree and lights" class="product-image w-full">
+                            <span class="absolute top-3 left-3 bg-green-700 text-white text-xs px-3 py-2 rounded-full">Popular</span>
+                            <span class="absolute top-3 right-3 bg-white rounded-full px-2 py-1">♡</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-xs text-gray-400">Festive Lighting</p>
+                            <h3 class="font-extrabold mt-2">Christmas Lantern</h3>
+                            <p class="text-yellow-500 mt-2">★★★★★</p>
+                            <p class="font-bold mt-2">₹1,299</p>
+                            <a href="#contact" class="block text-center bg-green-800 text-white rounded-lg py-3 mt-4 text-sm font-bold">Add to Cart</a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <div class="relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz_akUI43vrh45DW-b-LhU94vpC2uVxzE46lOTNAQktw&s=10"
+                                 alt="Christmas wreath and decorations" class="product-image w-full">
+                            <span class="absolute top-3 left-3 bg-red-500 text-white text-xs px-3 py-2 rounded-full">Popular</span>
+                            <span class="absolute top-3 right-3 bg-white rounded-full px-2 py-1">♡</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-xs text-gray-400">Home Accessories</p>
+                            <h3 class="font-extrabold mt-2">Holiday Wreath</h3>
+                            <p class="text-yellow-500 mt-2">★★★★★</p>
+                            <p class="font-bold mt-2">₹999</p>
+                            <a href="#contact" class="block text-center bg-green-800 text-white rounded-lg py-3 mt-4 text-sm font-bold">Add to Cart</a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl overflow-hidden soft-shadow">
+                        <div class="relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQifFNA_rLiv1EQdnqnrvsZOaTMqBXbV_7WpZ_1NoiVaw&s=10"
+                                 alt="Christmas gift hamper" class="product-image w-full">
+                            <span class="absolute top-3 left-3 bg-green-700 text-white text-xs px-3 py-2 rounded-full">Gift Pick</span>
+                            <span class="absolute top-3 right-3 bg-white rounded-full px-2 py-1">♡</span>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-xs text-gray-400">Gift Collection</p>
+                            <h3 class="font-extrabold mt-2">Christmas Hamper</h3>
+                            <p class="text-yellow-500 mt-2">★★★★★</p>
+                            <p class="font-bold mt-2">₹1,499</p>
+                            <a href="#contact" class="block text-center bg-green-800 text-white rounded-lg py-3 mt-4 text-sm font-bold">Add to Cart</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-16 px-6">
+            <div class="max-w-7xl mx-auto rounded-3xl overflow-hidden pink-bg grid md:grid-cols-2 items-center">
+
+                <div class="p-8 md:p-14">
+                    <p class="uppercase tracking-widest text-red-500 text-sm font-bold">A Season of Giving</p>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mt-4 leading-tight">
+                        Gifts That Make
+                        <span class="serif italic text-red-500">Hearts Happy</span>
+                    </h2>
+                    <p class="text-gray-600 leading-7 mt-5">
+                        Celebrate the people who make your world brighter.
+                        Discover thoughtful presents, festive bundles and
+                        little surprises for everyone on your list.
+                    </p>
+                    <a href="#products" class="red-btn inline-block rounded-full px-8 py-4 mt-7 font-bold">
+                        Find a Gift →
+                    </a>
+                </div>
+
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3aX3AaUqBgz3UfNQqiBZU9YpMVGlwBb2h5xi6CQfPg&s=10"
+                         alt="Beautifully wrapped gifts" class="w-full h-80 md:h-full object-cover">
+                </div>
+            </div>
+        </section>
+        <section id="events" class="pink-bg py-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+                    <p class="text-red-500 uppercase tracking-widest font-bold text-sm">Upcoming Events</p>
+                    <h2 class="text-4xl font-extrabold mt-3">Join Our Christmas Celebrations</h2>
+                    <p class="text-gray-500 mt-4">Make memories, share smiles and celebrate together.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                    <div class="space-y-5">
+
+                        <article class="bg-white rounded-2xl p-5 flex items-center gap-5 soft-shadow">
+                            <div class="bg-green-50 rounded-xl text-center p-4 min-w-max">
+                                <p class="text-2xl font-extrabold">20</p>
+                                <p class="text-xs font-bold">DEC</p>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-extrabold">Christmas Decoration Workshop</h3>
+                                <p class="text-sm text-gray-500 mt-2">Learn to create beautiful festive decorations.</p>
+                                <p class="text-xs text-green-700 mt-2">10:00 AM · Snowy Joy Studio</p>
+                            </div>
+                            <span class="text-xl">→</span>
+                        </article>
+
+                        <article class="bg-white rounded-2xl p-5 flex items-center gap-5 soft-shadow">
+                            <div class="bg-red-50 rounded-xl text-center p-4 min-w-max">
+                                <p class="text-2xl font-extrabold">24</p>
+                                <p class="text-xs font-bold">DEC</p>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-extrabold">Santa Meet & Greet</h3>
+                                <p class="text-sm text-gray-500 mt-2">A joyful afternoon for the whole family.</p>
+                                <p class="text-xs text-green-700 mt-2">04:00 PM · Snowy Joy Studio</p>
+                            </div>
+                            <span class="text-xl">→</span>
+                        </article>
+
+                        <article class="bg-white rounded-2xl p-5 flex items-center gap-5 soft-shadow">
+                            <div class="bg-blue-50 rounded-xl text-center p-4 min-w-max">
+                                <p class="text-2xl font-extrabold">25</p>
+                                <p class="text-xs font-bold">DEC</p>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-extrabold">Christmas Celebration</h3>
+                                <p class="text-sm text-gray-500 mt-2">Celebrate the season with gifts and festive fun.</p>
+                                <p class="text-xs text-green-700 mt-2">11:00 AM · Snowy Joy Studio</p>
+                            </div>
+                            <span class="text-xl">→</span>
+                        </article>
+
+                    </div>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5eVOOL4M-_slKzkF62lyMS0DNG_GClx1TiwZ-ahaBzw&s=10"
+                         alt="Festive Christmas gathering inspiration"
+                         class="w-full h-96 object-cover rounded-3xl soft-shadow">
+                </div>
+            </div>
+        </section>
+        <section class="cream-bg py-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+                    <p class="text-red-500 uppercase tracking-widest font-bold text-sm">Customer Stories</p>
+                    <h2 class="text-4xl font-extrabold mt-3">What Our Customers Say</h2>
+                    <p class="text-gray-500 mt-4">Your happiness is our favorite Christmas gift.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <article class="bg-white rounded-2xl p-7 soft-shadow">
+                        <p class="text-yellow-500 text-xl">★★★★★</p>
+                        <p class="text-gray-600 leading-7 mt-5">
+                            "The decorations were beautiful and arrived carefully packed.
+                            My living room feels like a little Christmas wonderland!"
+                        </p>
+                        <div class="flex items-center gap-4 mt-6">
+                            <div class="bg-pink-100 rounded-full w-12 h-12 flex items-center justify-center text-xl">👩🏻</div>
+                            <div>
+                                <h3 class="font-extrabold">Sanskruti Jadhav</h3>
+                                <p class="text-sm text-gray-500">Happy Customer</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl p-7 soft-shadow">
+                        <p class="text-yellow-500 text-xl">★★★★★</p>
+                        <p class="text-gray-600 leading-7 mt-5">
+                            "I found lovely gifts for all my friends. The collection is
+                            charming, the presentation is lovely and shopping was easy."
+                        </p>
+                        <div class="flex items-center gap-4 mt-6">
+                            <div class="bg-green-100 rounded-full w-12 h-12 flex items-center justify-center text-xl">👨🏻</div>
+                            <div>
+                                <h3 class="font-extrabold">Devang Patil</h3>
+                                <p class="text-sm text-gray-500">Happy Customer</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-2xl p-7 soft-shadow">
+                        <p class="text-yellow-500 text-xl">★★★★★</p>
+                        <p class="text-gray-600 leading-7 mt-5">
+                            "Such a cozy collection with wonderful gift ideas.
+                            I will definitely return to Snowy Joy next Christmas!"
+                        </p>
+                        <div class="flex items-center gap-4 mt-6">
+                            <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center text-xl">👨🏻</div>
+                            <div>
+                                <h3 class="font-extrabold">Gaurav Kondke</h3>
+                                <p class="text-sm text-gray-500">Happy Customer</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="blue-bg py-20">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+                    <p class="text-red-500 uppercase tracking-widest font-bold text-sm">Our Gallery</p>
+                    <h2 class="text-4xl font-extrabold mt-3">Moments of Christmas</h2>
+                    <p class="text-gray-500 mt-4">A little inspiration for your holiday home.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-ZVE8ZeR1nF72o0pUb04MophwhQMOjUzhtH8cdM_JA&s=10"
+                         alt="Christmas tree" class="gallery-image w-full rounded-2xl">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8n5qZMzSFIIek61Lcs-70zn5fAuQyc2AbPuBCGrp46A&s=10"
+                         alt="Christmas lights" class="gallery-image w-full rounded-2xl">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8n5qZMzSFIIek61Lcs-70zn5fAuQyc2AbPuBCGrp46A&s=10"
+                         alt="Christmas home decoration" class="gallery-image w-full rounded-2xl">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPaISeGgXF4vWaLw42GHdjYU7JtAzQjQXj-L1XkvANxw&s=10"
+                         alt="Holiday gifts" class="gallery-image w-full rounded-2xl">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5YaKz7P3fqtpw4kFTYRXSk3N2ZeJgvLy50QlzYMiclA&s=10"
+                         alt="Christmas scene" class="gallery-image w-full rounded-2xl">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsy_92qLrIbHqe8mnpt8WPlrQ5hXHcSH5niqX0TJ_-BA&s"
+                         alt="Cozy winter home" class="gallery-image w-full rounded-2xl">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78uU3nkURgxCgNvZGGKqgHLaWmkuLweTivIRbU9EaLQ&s=10"
+                         alt="Christmas tree ornaments" class="gallery-image w-full rounded-2xl">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78uU3nkURgxCgNvZGGKqgHLaWmkuLweTivIRbU9EaLQ&s=10"
+                         alt="Wrapped presents" class="gallery-image w-full rounded-2xl">
+
+                </div>
+            </div>
+        </section>
+        <section class="mint-bg py-20">
+            <div class="max-w-5xl mx-auto px-6 text-center">
+
+                <div class="text-5xl mb-5">💌</div>
+                <p class="uppercase tracking-widest text-red-500 text-sm font-bold">Stay Updated</p>
+
+                <h2 class="text-4xl font-extrabold mt-3">
+                    Subscribe to Our Newsletter
+                </h2>
+
+                <p class="text-gray-600 mt-5 leading-7 max-w-2xl mx-auto">
+                    Get the latest festive offers, new arrivals, Christmas inspiration
+                    and special updates delivered to your inbox.
+                </p>
+
+                <form action="#" class="max-w-xl mx-auto mt-8 flex flex-col sm:flex-row gap-3">
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        class="flex-1 px-5 py-4 rounded-full border border-gray-200 focus:outline-none"
+                        required>
+
+                    <button type="submit" class="red-btn px-8 py-4 rounded-full font-bold">
+                        Subscribe →
+                    </button>
+                </form>
+
+                <p class="text-sm text-gray-500 mt-4">
+                    ✨ A little festive joy, straight to your inbox.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+    <footer id="contact" class="cream-bg pt-14">
+
+        <div class="max-w-7xl mx-auto px-6 pb-12 grid grid-cols-2 md:grid-cols-4 gap-10">
+
+            <div class="col-span-2 md:col-span-1">
+                <a href="#home" class="text-2xl font-extrabold flex items-center">
+                    <span class="text-3xl mr-2">🎄</span> Snowy Joy
+                </a>
+
+                <p class="text-gray-500 leading-7 mt-4">
+                    Making every Christmas warmer, brighter and more magical,
+                    one thoughtful gift at a time.
+                </p>
+
+                <p class="mt-5 text-red-500 serif italic text-xl">
+                    Merry Christmas! ✨
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-extrabold text-lg">Quick Links</h3>
+                <ul class="space-y-3 mt-5 text-gray-500">
+                    <li><a href="#home" class="hover:text-red-500">Home</a></li>
+                    <li><a href="#about" class="hover:text-red-500">About Us</a></li>
+                    <li><a href="#offers" class="hover:text-red-500">Special Offers</a></li>
+                    <li><a href="#products" class="hover:text-red-500">Our Products</a></li>
+                    <li><a href="#gallery" class="hover:text-red-500">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-extrabold text-lg">Customer Care</h3>
+                <ul class="space-y-3 mt-5 text-gray-500">
+                    <li><a href="#contact" class="hover:text-red-500">Help Center</a></li>
+                    <li><a href="#contact" class="hover:text-red-500">Shipping Information</a></li>
+                    <li><a href="#contact" class="hover:text-red-500">Returns and Refunds</a></li>
+                    <li><a href="#contact" class="hover:text-red-500">Privacy Policy</a></li>
+                    <li><a href="#contact" class="hover:text-red-500">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-extrabold text-lg">Get in Touch</h3>
+                <p class="text-gray-500 mt-5 leading-7">
+                    Email: hello@snowyjoy.example
+                </p>
+                <p class="text-gray-500 mt-2">
+                    Monday – Saturday
+                </p>
+                <p class="text-gray-500 mt-2">
+                    9:00 AM – 6:00 PM
+                </p>
+
+                <div class="flex gap-3 mt-5">
+                    <a href="#contact" aria-label="Instagram" class="bg-pink-100 rounded-full w-10 h-10 flex items-center justify-center"><i class="ri-instagram-line"></i></a>
+                    <a href="#contact" aria-label="Facebook" class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center"><i class="ri-facebook-fill"></i></a>
+                    <a href="#contact" aria-label="Pinterest" class="bg-red-100 rounded-full w-10 h-10 flex items-center justify-center"><i class="ri-twitter-x-fill"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-200 py-6 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-500">
+                <p>© 2026 Snowy Joy. All rights reserved.</p>
+                <p>Made with ♡ and Christmas magic.</p>
+                <a href="#home" class="font-bold text-green-800">Back to Top ↑</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
